@@ -1,4 +1,4 @@
 module.exports = {
-    testEnvironment: 'node',
-    testMatch: ['**/__tests__/test_cases/**/*']
-}
+  testEnvironment: 'node',
+  testMatch: ['**/__tests__/test_cases/**/*'],
+};
