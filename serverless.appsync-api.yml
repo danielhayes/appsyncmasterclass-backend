@@ -2,6 +2,6 @@ name: appsyncmasterclass
 schema: schema.api.graphql
 authenticationType: AMAZON_COGNITO_USER_POOLS
 userPoolConfig:
-  awsRegion: us-east-1
+  awsRegion: ${self:provider.region}
   defaultAction: ALLOW
   userPoolId: !Ref CognitoUserPool

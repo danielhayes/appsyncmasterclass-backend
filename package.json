@@ -5,7 +5,9 @@
   "description": "Repo for appsync masterclass backend",
   "main": "index.js",
   "scripts": {
-    "sls": "sls"
+    "sls": "sls",
+    "exportEnv": "sls export-env",
+    "integration-test": "jest --verbose ./__tests__/test_cases/integration"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,16 @@
   },
   "homepage": "https://github.com/danielhayes/appsyncmasterclass-backend#readme",
   "devDependencies": {
-    "serverless": "2.4.0",
-    "serverless-appsync-plugin": "1.4.0"
+    "@types/jest": "^26.0.24",
+    "aws-sdk": "^2.951.0",
+    "dotenv": "^10.0.0",
+    "jest": "^27.0.6",
+    "serverless": "^2.52.1",
+    "serverless-appsync-plugin": "^1.11.3",
+    "serverless-export-env": "^1.4.4",
+    "serverless-iam-roles-per-function": "^3.2.0"
+  },
+  "dependencies": {
+    "chance": "^1.1.7"
   }
 }

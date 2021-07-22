@@ -1,0 +1,22 @@
+{
+  "printWidth": 120,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 200
+      }
+    },
+    {
+      "files": "*.graphql",
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ]
+}
